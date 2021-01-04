@@ -8,3 +8,5 @@ echo "FLUSH PRIVILEGES;"| mysql -u root --skip-password
 echo "update mysql.user set plugin='' where user='root';"| mysql -u root --skip-password
 
 nginx -g 'daemon off;'
+
+while true; do sleep 12 ; done
